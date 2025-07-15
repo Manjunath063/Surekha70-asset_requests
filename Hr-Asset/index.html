@@ -642,11 +642,9 @@
                     query.append('search', currentSearchTerm);
                 }
 
-<<<<<<< HEAD:Hr Asset/index.html
+
                 const response = await fetch(`http://13.60.25.71:3602/api/requests?${query}`);
-=======
-                const response = await fetch(`http://3.85.61.23:3602/api/requests?${query}`);
->>>>>>> c365c19bc838d74be1a798c104d2dc4eb93d5891:Hr-Asset/index.html
+
                 if (!response.ok) {
                     throw new Error(`Failed to fetch requests: ${response.statusText}`);
                 }
@@ -744,11 +742,9 @@
             const idsToDelete = Array.from(checkboxes).map(cb => parseInt(cb.dataset.id));
 
             try {
-<<<<<<< HEAD:Hr Asset/index.html
+
                 const response = await fetch('http://13.60.25.71:3602/api/requests', {
-=======
-                const response = await fetch('http://3.85.61.23:3602/api/requests', {
->>>>>>> c365c19bc838d74be1a798c104d2dc4eb93d5891:Hr-Asset/index.html
+
                     method: 'DELETE',
                     headers: {
                         'Content-Type': 'application/json'
@@ -780,11 +776,9 @@
 
         async function updateStatus(requestId, status) {
             try {
-<<<<<<< HEAD:Hr Asset/index.html
+
                 const response = await fetch(`http://13.60.25.71:3602/api/requests/${requestId}`, {
-=======
-                const response = await fetch(`http://3.85.61.23:3602/api/requests/${requestId}`, {
->>>>>>> c365c19bc838d74be1a798c104d2dc4eb93d5891:Hr-Asset/index.html
+
                     method: 'PUT',
                     headers: {
                         'Content-Type': 'application/json'
@@ -812,11 +806,9 @@
             }
 
             try {
-<<<<<<< HEAD:Hr Asset/index.html
+
                 const response = await fetch('http://13.60.25.71:3602/api/requests/clear', {
-=======
-                const response = await fetch('http://3.85.61.23:3602/api/requests/clear', {
->>>>>>> c365c19bc838d74be1a798c104d2dc4eb93d5891:Hr-Asset/index.html
+
                     method: 'DELETE',
                     headers: {
                         'Content-Type': 'application/json'
@@ -839,11 +831,9 @@
 
         async function viewDetails(requestId) {
             try {
-<<<<<<< HEAD:Hr Asset/index.html
+
                 const response = await fetch(`http://13.60.25.71:3602/api/requests?status=all`);
-=======
-                const response = await fetch(`http://3.85.61.23:3602/api/requests?status=all`);
->>>>>>> c365c19bc838d74be1a798c104d2dc4eb93d5891:Hr-Asset/index.html
+
                 if (!response.ok) {
                     throw new Error('Failed to fetch requests');
                 }
